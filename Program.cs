@@ -19,45 +19,24 @@ class Program
         ExibirPersonagem(p2);
         Console.WriteLine("Batalha");
         int pontosP1 = 0;
-        int pontosP2 = 0;
-        if (CalcularOfensiva(p1) > CalcularOfensiva(p2))
-        {
-            Console.WriteLine("Ofensiva: " + p1.Nome + " venceu!");
-            pontosP1++;
-        }
-        else
-        {
-            Console.WriteLine("Ofensiva: " + p2.Nome + " venceu!");
-            pontosP2++;
-        }
-
+        int pontosP2 = 0;        
         if (CalcularEstrategia(p1) > CalcularEstrategia(p2))
         {
-            Console.WriteLine("Estratégia: " + p1.Nome + " venceu!");
+            Console.WriteLine("Lógica de batalha: estratégica");
             pontosP1++;
         }
         else
         {
-            Console.WriteLine("Estratégia: " + p2.Nome + " venceu!");
+            Console.WriteLine("Lógica de batalha: estratégica");
             pontosP2++;
         }
-        if (CalcularResistencia(p1) > CalcularResistencia(p2))
-        {
-            Console.WriteLine("Resistência: " + p1.Nome + " venceu!");
-            pontosP1++;
-        }
-        else
-        {
-            Console.WriteLine("Resistência: " + p2.Nome + " venceu!");
-            pontosP2++;
-        }
-
+        
         Console.WriteLine("Resultado");
 
         if (pontosP1 > pontosP2)
-            Console.WriteLine(p1.Nome + " venceu a batalha!");
+            Console.WriteLine(p1.Nome + " venceu a batalha");
         else if (pontosP2 > pontosP1)
-            Console.WriteLine(p2.Nome + " venceu a batalha!");
+            Console.WriteLine(p2.Nome + " venceu a batalha");
         else
             Console.WriteLine("Empate");
     }
@@ -82,18 +61,10 @@ class Program
         Console.WriteLine("Vida: " + p.Vida);
     }
 
-    static int CalcularOfensiva(Personagem p)
-    {
-        return p.Forca + p.Agilidade;
-    }
 
     static int CalcularEstrategia(Personagem p)
     {
         return p.Inteligencia * 2;
     }
 
-    static int CalcularResistencia(Personagem p)
-    {
-        return p.Vida + p.Agilidade;
-    }
 }

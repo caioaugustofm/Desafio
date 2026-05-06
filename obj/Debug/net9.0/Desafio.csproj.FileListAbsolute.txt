@@ -12,3 +12,4 @@ C:\Users\Alunos\Desktop\Desafio\obj\Debug\net9.0\refint\Desafio.dll
 C:\Users\Alunos\Desktop\Desafio\obj\Debug\net9.0\Desafio.pdb
 C:\Users\Alunos\Desktop\Desafio\obj\Debug\net9.0\Desafio.genruntimeconfig.cache
 C:\Users\Alunos\Desktop\Desafio\obj\Debug\net9.0\ref\Desafio.dll
+C:\Users\Alunos\Desktop\Desafio\obj\Debug\net9.0\Desafio.sourcelink.json
